@@ -8,12 +8,42 @@ body {
     background: #000;
 }
 
+
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
+.container h1 p {
+    text-align: center;
+}
+
+.container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text; 
+    text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    font-weight:bold;
+    z-index: 1000;
+}
+.container p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    font-size: 1.2em;
+    text-align: right;
+    color:#fff;
+    z-index: 1001;
+}
 .container .box {
     position: absolute;
     top: calc(50% - 200px);
